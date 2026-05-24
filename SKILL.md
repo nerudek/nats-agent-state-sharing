@@ -5,6 +5,7 @@ version: 1.0.0
 author: nerudek
 compatible-with: claude-code, openclaw, hermes-agent, kimi-code, goose
 tags: [nats, jetstream, multi-agent, shared-state, ai-agents, coordination]
+license: "MIT"
 ---
 
 # NATS Agent State Sharing — Shared Runtime Memory for Multi-Agent AI
@@ -84,7 +85,18 @@ NATS is a lightweight, high-performance messaging system (7MB binary, 0 external
 | `agents.nerudek.project` | Overall project phase | `{"phase":"setup","next":"verify_infra"}` |
 | `agents.nerudek.training` | Training pipeline progress | `{"layer1":"done","layer2":"running"}` |
 
-### Usage
+#
+## Install
+
+```bash
+# Skopiuj do vault Claude Code
+cp -r . ~/.claude/skills/vault/nats-agent-state-sharing/
+
+# Lub sklonuj bezpośrednio
+git clone https://github.com/nerudek/nats-agent-state-sharing ~/.claude/skills/vault/nats-agent-state-sharing/
+```
+
+## Usage
 
 **Read state:**
 ```bash
